@@ -542,9 +542,9 @@ CGFloat workingRadiusForFaceOfSizeWithAngle(CGSize faceSize, CGFloat angle)
 		[df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:[[NSLocale preferredLanguages] firstObject]]];
 		[df setDateFormat:@"ccc d"];
 		
-		CGFloat h = 12;
+		CGFloat h = 10;
 		
-		NSDictionary *attribs = @{NSFontAttributeName : [[NSFont systemFontOfSize:h weight:NSFontWeightMedium] smallCaps], NSForegroundColorAttributeName : self.textColor};
+		NSDictionary *attribs = @{NSFontAttributeName : [[NSFont fontWithName:@"Futura-Medium" size:h] smallCaps], NSForegroundColorAttributeName : self.textColor};
 		
 		NSAttributedString *labelText = [[NSAttributedString alloc] initWithString:[[df stringFromDate:[NSDate date]] uppercaseString] attributes:attribs];
 		
@@ -564,9 +564,9 @@ CGFloat workingRadiusForFaceOfSizeWithAngle(CGSize faceSize, CGFloat angle)
         [WKInterfaceDevice currentDevice].batteryMonitoringEnabled = YES;
         float watchBatteryPercentage = [WKInterfaceDevice currentDevice].batteryLevel;
         
-        CGFloat h = 12;
+        CGFloat h = 10;
         
-        NSDictionary *attribs = @{NSFontAttributeName : [[NSFont systemFontOfSize:h weight:NSFontWeightMedium] smallCaps], NSForegroundColorAttributeName : self.textColor};
+        NSDictionary *attribs = @{NSFontAttributeName : [[NSFont fontWithName:@"Futura-Medium" size:h] smallCaps], NSForegroundColorAttributeName : self.textColor};
         
         NSAttributedString *labelText = [[NSAttributedString alloc] initWithString:[[NSString stringWithFormat:@"%.0f%%", watchBatteryPercentage * 100] uppercaseString] attributes:attribs];
         
@@ -591,9 +591,9 @@ CGFloat workingRadiusForFaceOfSizeWithAngle(CGSize faceSize, CGFloat angle)
     
     if (self.showWeather)
     {
-            CGFloat h = 18;
+            CGFloat h = 15;
                     
-            NSDictionary *attribs = @{NSFontAttributeName : [[NSFont systemFontOfSize:h weight:NSFontWeightMedium] smallCaps], NSForegroundColorAttributeName : self.textColor};
+            NSDictionary *attribs = @{NSFontAttributeName : [[NSFont fontWithName:@"Futura-Medium" size:h] smallCaps], NSForegroundColorAttributeName : self.textColor};
                     
             NSAttributedString *labelText = [[NSAttributedString alloc] initWithString:[[NSString stringWithFormat:@"HERMÈS"] uppercaseString] attributes:attribs];
                     
@@ -607,9 +607,9 @@ CGFloat workingRadiusForFaceOfSizeWithAngle(CGSize faceSize, CGFloat angle)
                     
             [faceMarkings addChild:numberLabel];
         
-            CGFloat h2 = 12;
+            CGFloat h2 = 10;
         
-            NSDictionary *attribs2 = @{NSFontAttributeName : [[NSFont systemFontOfSize:h2 weight:NSFontWeightMedium] smallCaps], NSForegroundColorAttributeName : self.textColor};
+            NSDictionary *attribs2 = @{NSFontAttributeName : [[NSFont fontWithName:@"Futura-Medium" size:h2] smallCaps], NSForegroundColorAttributeName : self.textColor};
         
             NSAttributedString *labelText2 = [[NSAttributedString alloc] initWithString:[[NSString stringWithFormat:@"Paris"] uppercaseString] attributes:attribs2];
         
